@@ -18,6 +18,8 @@
 		651C4F532B4F211900CAEF46 /* CategoryViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C4F522B4F211900CAEF46 /* CategoryViews.swift */; };
 		658E02602B4F70B7006D83AF /* Int+CurrencyFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E025F2B4F70B7006D83AF /* Int+CurrencyFormat.swift */; };
 		658E02622B4F715E006D83AF /* Date+TransactionFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E02612B4F715E006D83AF /* Date+TransactionFormat.swift */; };
+		658E02652B4F738A006D83AF /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E02642B4F738A006D83AF /* Balance.swift */; };
+		658E02672B4F748C006D83AF /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E02662B4F748C006D83AF /* Row.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		651C4F522B4F211900CAEF46 /* CategoryViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViews.swift; sourceTree = "<group>"; };
 		658E025F2B4F70B7006D83AF /* Int+CurrencyFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+CurrencyFormat.swift"; sourceTree = "<group>"; };
 		658E02612B4F715E006D83AF /* Date+TransactionFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+TransactionFormat.swift"; sourceTree = "<group>"; };
+		658E02642B4F738A006D83AF /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		658E02662B4F748C006D83AF /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 				651C4F3C2B4F1BC800CAEF46 /* ContentView.swift */,
 				651C4F482B4F1BF800CAEF46 /* Models */,
 				651C4F4F2B4F1EFE00CAEF46 /* Views */,
+				658E02632B4F735F006D83AF /* Sub-views */,
 				658E025E2B4F70A6006D83AF /* Extensions */,
 				651C4F3E2B4F1BC900CAEF46 /* Assets.xcassets */,
 				651C4F402B4F1BC900CAEF46 /* Preview Content */,
@@ -110,6 +115,15 @@
 				658E02612B4F715E006D83AF /* Date+TransactionFormat.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		658E02632B4F735F006D83AF /* Sub-views */ = {
+			isa = PBXGroup;
+			children = (
+				658E02642B4F738A006D83AF /* Balance.swift */,
+				658E02662B4F748C006D83AF /* Row.swift */,
+			);
+			path = "Sub-views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +202,8 @@
 				651C4F532B4F211900CAEF46 /* CategoryViews.swift in Sources */,
 				651C4F3B2B4F1BC800CAEF46 /* BudgetApp.swift in Sources */,
 				658E02602B4F70B7006D83AF /* Int+CurrencyFormat.swift in Sources */,
+				658E02672B4F748C006D83AF /* Row.swift in Sources */,
+				658E02652B4F738A006D83AF /* Balance.swift in Sources */,
 				651C4F4E2B4F1D9C00CAEF46 /* TestData.swift in Sources */,
 				658E02622B4F715E006D83AF /* Date+TransactionFormat.swift in Sources */,
 				651C4F4A2B4F1C0900CAEF46 /* Transaction.swift in Sources */,
