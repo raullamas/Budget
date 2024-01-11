@@ -124,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				658E02682B4F79A9006D83AF /* AccountView.swift */,
-				656606792B50213F00E0B98A /* TransactionContent.swift */,
 				65B1310B2B504D520039860D /* TransactionView.swift */,
 				6506ECEC2B504B0C00D038CD /* BudgetView.swift */,
 			);
@@ -160,6 +159,7 @@
 				658E026A2B4F7B93006D83AF /* Amount.swift */,
 				658E026C2B4F7D46006D83AF /* CategoryButton.swift */,
 				656606772B501F1F00E0B98A /* CategorySelectionView.swift */,
+				656606792B50213F00E0B98A /* TransactionContent.swift */,
 			);
 			path = "Sub-views";
 			sourceTree = "<group>";
