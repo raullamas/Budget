@@ -29,6 +29,7 @@
 		658E02692B4F79A9006D83AF /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E02682B4F79A9006D83AF /* AccountView.swift */; };
 		658E026B2B4F7B93006D83AF /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E026A2B4F7B93006D83AF /* Amount.swift */; };
 		658E026D2B4F7D46006D83AF /* CategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E026C2B4F7D46006D83AF /* CategoryButton.swift */; };
+		65B1310C2B504D520039860D /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1310B2B504D520039860D /* TransactionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		658E02682B4F79A9006D83AF /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		658E026A2B4F7B93006D83AF /* Amount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
 		658E026C2B4F7D46006D83AF /* CategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButton.swift; sourceTree = "<group>"; };
+		65B1310B2B504D520039860D /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			children = (
 				658E02682B4F79A9006D83AF /* AccountView.swift */,
 				656606792B50213F00E0B98A /* TransactionContent.swift */,
+				65B1310B2B504D520039860D /* TransactionView.swift */,
 				6506ECEC2B504B0C00D038CD /* BudgetView.swift */,
 			);
 			path = Views;
@@ -236,6 +239,7 @@
 				658E026B2B4F7B93006D83AF /* Amount.swift in Sources */,
 				6566067D2B5027CB00E0B98A /* StateController.swift in Sources */,
 				651C4F3D2B4F1BC800CAEF46 /* ContentView.swift in Sources */,
+				65B1310C2B504D520039860D /* TransactionView.swift in Sources */,
 				651C4F4C2B4F1CC500CAEF46 /* Account.swift in Sources */,
 				651C4F512B4F1F1400CAEF46 /* CategoryView.swift in Sources */,
 				651C4F532B4F211900CAEF46 /* CategoryViews.swift in Sources */,
