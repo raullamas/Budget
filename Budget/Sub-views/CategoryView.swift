@@ -17,10 +17,9 @@ struct CategoryView: View {
                 .frame(width: 56.0, height: 56.0)
                 .foregroundColor(highlighted ? Color(.systemTeal) : Color(.quaternarySystemFill))
             
-            // TODO: add category.imageName
-//            Image(systemName: "\(category.imageName)")
-//                .font(.headline)
-//                .foregroundColor(highlighted ? .white : .primary)
+            Image(systemName: "\(category.imageName)")
+                .font(.headline)
+                .foregroundColor(highlighted ? .white : .primary)
         }
     }
 }
