@@ -20,13 +20,12 @@ struct TransactionView: View {
         NavigationStack {
                     TransactionContent(amount: $amount, selectedCategory: $selectedCategory, description: $description)
                         .navigationBarTitle("New Transaction")
-//                          TODO: add addingNewTransaction
-//                        .navigationBarItems(leading: Button(action: { self.dismiss() }) {
-//                            Text("Cancel")
-//                            }, trailing: Button(action: addTransaction) {
-//                                Text("Add")
-//                                    .bold()
-//                        })
+                        .navigationBarItems(leading: Button(action: { self.dismiss() }) {
+                            Text("Cancel")
+                            }, trailing: Button(action: addTransaction) {
+                                Text("Add")
+                                    .bold()
+                        })
                 }
     }
 }
