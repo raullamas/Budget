@@ -23,7 +23,6 @@ struct BudgetView: View {
                     })
                 .sheet(isPresented: $addingNewTransaction) {
                     TransactionView()
-                        .environmentObject(self.stateController)
                 }
         }
     }
