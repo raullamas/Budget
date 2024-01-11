@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6506ECED2B504B0C00D038CD /* BudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6506ECEC2B504B0C00D038CD /* BudgetView.swift */; };
 		651C4F3B2B4F1BC800CAEF46 /* BudgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C4F3A2B4F1BC800CAEF46 /* BudgetApp.swift */; };
 		651C4F3D2B4F1BC800CAEF46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C4F3C2B4F1BC800CAEF46 /* ContentView.swift */; };
 		651C4F3F2B4F1BC900CAEF46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651C4F3E2B4F1BC900CAEF46 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6506ECEC2B504B0C00D038CD /* BudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetView.swift; sourceTree = "<group>"; };
 		651C4F372B4F1BC800CAEF46 /* Budget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Budget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		651C4F3A2B4F1BC800CAEF46 /* BudgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetApp.swift; sourceTree = "<group>"; };
 		651C4F3C2B4F1BC800CAEF46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			children = (
 				658E02682B4F79A9006D83AF /* AccountView.swift */,
 				656606792B50213F00E0B98A /* TransactionContent.swift */,
+				6506ECEC2B504B0C00D038CD /* BudgetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				651C4F512B4F1F1400CAEF46 /* CategoryView.swift in Sources */,
 				651C4F532B4F211900CAEF46 /* CategoryViews.swift in Sources */,
 				651C4F3B2B4F1BC800CAEF46 /* BudgetApp.swift in Sources */,
+				6506ECED2B504B0C00D038CD /* BudgetView.swift in Sources */,
 				656606782B501F1F00E0B98A /* CategorySelectionView.swift in Sources */,
 				658E02602B4F70B7006D83AF /* Int+CurrencyFormat.swift in Sources */,
 				658E02672B4F748C006D83AF /* Row.swift in Sources */,
