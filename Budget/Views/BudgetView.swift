@@ -8,21 +8,27 @@
 import SwiftUI
 
 struct BudgetView: View {
+    @State private var addingNewTransaction = false
+    
     @EnvironmentObject private var stateController: StateController
     
     var body: some View {
         NavigationStack {
             AccountView(account: stateController.account)
-            // TODO: add addingNewTransaction
-//                .navigationBarTitle("Budget")
-//                .navigationBarItems(trailing: Button(action: { self.addingNewTransaction = true }) {
-//                                    Image(systemName: "plus")
-//                                        .font(.title)
-//                                })
+                .navigationBarTitle("Budget")
+                .navigationBarItems(
+                    trailing: Button(action: { self.addingNewTransaction = true }) {
+                        Image(systemName: "plus")
+                            .font(.title)
+                    })
+                .sheet(isPresented: $addingNewTransaction) {
+                    TransactionView()
+                        .environmentObject(self.stateController)
+                }
         }
     }
 }
 
-#Preview {
-    BudgetView()
-}
+//#Preview {
+//    BudgetView()
+//}
