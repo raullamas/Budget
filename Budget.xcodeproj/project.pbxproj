@@ -21,6 +21,8 @@
 		658E02652B4F738A006D83AF /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E02642B4F738A006D83AF /* Balance.swift */; };
 		658E02672B4F748C006D83AF /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E02662B4F748C006D83AF /* Row.swift */; };
 		658E02692B4F79A9006D83AF /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E02682B4F79A9006D83AF /* AccountView.swift */; };
+		658E026B2B4F7B93006D83AF /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E026A2B4F7B93006D83AF /* Amount.swift */; };
+		658E026D2B4F7D46006D83AF /* CategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E026C2B4F7D46006D83AF /* CategoryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		658E02642B4F738A006D83AF /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
 		658E02662B4F748C006D83AF /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 		658E02682B4F79A9006D83AF /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		658E026A2B4F7B93006D83AF /* Amount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
+		658E026C2B4F7D46006D83AF /* CategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,8 @@
 				651C4F522B4F211900CAEF46 /* CategoryViews.swift */,
 				658E02642B4F738A006D83AF /* Balance.swift */,
 				658E02662B4F748C006D83AF /* Row.swift */,
+				658E026A2B4F7B93006D83AF /* Amount.swift */,
+				658E026C2B4F7D46006D83AF /* CategoryButton.swift */,
 			);
 			path = "Sub-views";
 			sourceTree = "<group>";
@@ -200,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				658E02692B4F79A9006D83AF /* AccountView.swift in Sources */,
+				658E026B2B4F7B93006D83AF /* Amount.swift in Sources */,
 				651C4F3D2B4F1BC800CAEF46 /* ContentView.swift in Sources */,
 				651C4F4C2B4F1CC500CAEF46 /* Account.swift in Sources */,
 				651C4F512B4F1F1400CAEF46 /* CategoryView.swift in Sources */,
@@ -209,6 +216,7 @@
 				658E02672B4F748C006D83AF /* Row.swift in Sources */,
 				658E02652B4F738A006D83AF /* Balance.swift in Sources */,
 				651C4F4E2B4F1D9C00CAEF46 /* TestData.swift in Sources */,
+				658E026D2B4F7D46006D83AF /* CategoryButton.swift in Sources */,
 				658E02622B4F715E006D83AF /* Date+TransactionFormat.swift in Sources */,
 				651C4F4A2B4F1C0900CAEF46 /* Transaction.swift in Sources */,
 			);
