@@ -89,7 +89,7 @@
 				651C4F482B4F1BF800CAEF46 /* Models */,
 				6566067B2B50278F00E0B98A /* Controllers */,
 				651C4F4F2B4F1EFE00CAEF46 /* Views */,
-				658E02632B4F735F006D83AF /* Sub-views */,
+				658E02632B4F735F006D83AF /* Pure views */,
 				658E025E2B4F70A6006D83AF /* Extensions */,
 				651C4F3E2B4F1BC900CAEF46 /* Assets.xcassets */,
 				651C4F402B4F1BC900CAEF46 /* Preview Content */,
@@ -144,7 +144,7 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		658E02632B4F735F006D83AF /* Sub-views */ = {
+		658E02632B4F735F006D83AF /* Pure views */ = {
 			isa = PBXGroup;
 			children = (
 				651C4F502B4F1F1400CAEF46 /* CategoryView.swift */,
@@ -155,7 +155,7 @@
 				656606772B501F1F00E0B98A /* CategorySelectionView.swift */,
 				656606792B50213F00E0B98A /* TransactionContent.swift */,
 			);
-			path = "Sub-views";
+			path = "Pure views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
