@@ -19,15 +19,15 @@ struct TransactionView: View {
     
     var body: some View {
         NavigationStack {
-                    TransactionContent(amount: $amount, selectedCategory: $selectedCategory, description: $description)
-                        .navigationBarTitle("New Transaction")
-                        .navigationBarItems(leading: Button(action: { self.dismiss() }) {
-                            Text("Cancel")
-                            }, trailing: Button(action: addTransaction) {
-                                Text("Add")
-                                    .bold()
-                        })
-                }
+            TransactionContent(amount: $amount, selectedCategory: $selectedCategory, description: $description)
+                .navigationBarTitle("New Transaction")
+                .navigationBarItems(leading: Button(action: { self.dismiss() }) {
+                    Text("Cancel")
+                }, trailing: Button(action: addTransaction) {
+                    Text("Add")
+                        .bold()
+                })
+        }
     }
 }
 
