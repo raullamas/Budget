@@ -22,7 +22,7 @@ struct BudgetView: View {
                             .font(.title)
                     })
                 .sheet(isPresented: $addingNewTransaction) {
-                    TransactionView()
+                    TransactionView(addingNewTransaction: $addingNewTransaction)
                 }
         }
     }

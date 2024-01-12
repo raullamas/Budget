@@ -12,8 +12,9 @@ struct TransactionView: View {
     @State private var selectedCategory: Transaction.Category = .groceries
     @State private var description: String = ""
     
+    @Binding var addingNewTransaction: Bool
+    
     @EnvironmentObject private var stateController: StateController
-    @Environment(\.presentationMode) private var presentationMode
     
     
     var body: some View {
@@ -44,10 +45,10 @@ private extension TransactionView {
     }
     
     func dismiss() {
-        presentationMode.wrappedValue.dismiss()
+        addingNewTransaction = false
     }
 }
 
 #Preview {
-    TransactionView()
+    TransactionView(addingNewTransaction: .constant(true))
 }
