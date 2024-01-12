@@ -17,14 +17,21 @@ struct BudgetView: View {
             AccountView(account: stateController.account)
                 .navigationBarTitle("Budget")
                 .navigationBarItems(
-                    trailing: Button(action: { self.addingNewTransaction = true }) {
+                    trailing: Button(action: addTransaction) {
                         Image(systemName: "plus")
                             .font(.title)
-                    })
+                    }
+                )
                 .sheet(isPresented: $addingNewTransaction) {
                     TransactionView(addingNewTransaction: $addingNewTransaction)
                 }
         }
+    }
+}
+
+private extension BudgetView {
+    func addTransaction() {
+        addingNewTransaction = true
     }
 }
 
