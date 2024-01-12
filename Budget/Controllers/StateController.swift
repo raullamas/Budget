@@ -8,7 +8,7 @@
 import Foundation
 
 final class StateController: ObservableObject {
-    @Published var account: Account = TestData.account
+    @Published private(set) var account: Account = TestData.account
     
     func add(_ transaction: Transaction) {
         account.add(transaction)
