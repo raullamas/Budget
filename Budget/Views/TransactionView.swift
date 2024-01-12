@@ -44,7 +44,8 @@ private extension TransactionView {
             amount: Int(amount)! * 100 * sign,
             date: Date(),
             description: description,
-            category: selectedCategory)
+            category: selectedCategory
+        )
         
         stateController.add(transaction)
         dismiss()
