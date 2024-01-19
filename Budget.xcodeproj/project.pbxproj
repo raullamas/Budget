@@ -108,8 +108,8 @@
 		651C4F482B4F1BF800CAEF46 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				651C4F492B4F1C0800CAEF46 /* Transaction.swift */,
 				651C4F4B2B4F1CC500CAEF46 /* Account.swift */,
+				651C4F492B4F1C0800CAEF46 /* Transaction.swift */,
 				651C4F4D2B4F1D9C00CAEF46 /* TestData.swift */,
 			);
 			path = Models;
