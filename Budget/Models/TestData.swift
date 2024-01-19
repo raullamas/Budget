@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TestData {
+struct TestData { // CORE
     static let salary = Transaction(
         amount: Int.random(in: 100_000...1_000_000),
         category: .income,
