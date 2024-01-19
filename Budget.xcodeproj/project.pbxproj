@@ -85,13 +85,9 @@
 		651C4F392B4F1BC800CAEF46 /* Budget */ = {
 			isa = PBXGroup;
 			children = (
-				651C4F3A2B4F1BC800CAEF46 /* BudgetApp.swift */,
-				651C4F482B4F1BF800CAEF46 /* Models */,
-				6566067B2B50278F00E0B98A /* Controllers */,
-				651C4F4F2B4F1EFE00CAEF46 /* Views */,
-				658E02632B4F735F006D83AF /* Pure views */,
-				658E025E2B4F70A6006D83AF /* Extensions */,
-				651C4F3E2B4F1BC900CAEF46 /* Assets.xcassets */,
+				65B4DCD32B5AD0D80049037C /* Code */,
+				65B4DCD42B5AD3700049037C /* Config */,
+				65B4DCD52B5AD37E0049037C /* Resources */,
 				651C4F402B4F1BC900CAEF46 /* Preview Content */,
 			);
 			path = Budget;
@@ -121,6 +117,7 @@
 				658E02682B4F79A9006D83AF /* AccountView.swift */,
 				65B1310B2B504D520039860D /* TransactionView.swift */,
 				6506ECEC2B504B0C00D038CD /* BudgetView.swift */,
+				658E02632B4F735F006D83AF /* Pure */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -133,7 +130,7 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		658E025E2B4F70A6006D83AF /* Extensions */ = {
+		658E025E2B4F70A6006D83AF /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				658E025F2B4F70B7006D83AF /* Int+CurrencyFormat.swift */,
@@ -141,10 +138,10 @@
 				656606732B501C6C00E0B98A /* Transaction.Category+name.swift */,
 				656606752B501D4900E0B98A /* Transaction.Category+imageName.swift */,
 			);
-			path = Extensions;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
-		658E02632B4F735F006D83AF /* Pure views */ = {
+		658E02632B4F735F006D83AF /* Pure */ = {
 			isa = PBXGroup;
 			children = (
 				651C4F502B4F1F1400CAEF46 /* CategoryView.swift */,
@@ -155,7 +152,34 @@
 				656606772B501F1F00E0B98A /* CategorySelectionView.swift */,
 				656606792B50213F00E0B98A /* TransactionContent.swift */,
 			);
-			path = "Pure views";
+			path = Pure;
+			sourceTree = "<group>";
+		};
+		65B4DCD32B5AD0D80049037C /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				651C4F3A2B4F1BC800CAEF46 /* BudgetApp.swift */,
+				6566067B2B50278F00E0B98A /* Controllers */,
+				651C4F482B4F1BF800CAEF46 /* Models */,
+				658E025E2B4F70A6006D83AF /* Utilities */,
+				651C4F4F2B4F1EFE00CAEF46 /* Views */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		65B4DCD42B5AD3700049037C /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		65B4DCD52B5AD37E0049037C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				651C4F3E2B4F1BC900CAEF46 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
