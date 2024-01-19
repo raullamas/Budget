@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Account {
+struct Account { // CORE
     private(set) var transactions: [Transaction]
     
     var balance: Int {
