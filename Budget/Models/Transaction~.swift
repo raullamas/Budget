@@ -7,16 +7,17 @@
 
 import Foundation
 
-struct Transaction: Identifiable { // CORE
+struct Transaction: Identifiable {
     enum Category: String, CaseIterable, Identifiable {
         case income, groceries, utilities
         
         var id: String { rawValue }
     }
     
+    let id = UUID()
+    
     let amount: Int,
-        category: Category,
         date: Date,
         description: String,
-        id = UUID()
+        category: Category
 }

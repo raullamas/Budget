@@ -46,8 +46,8 @@ struct Row: View {
 #Preview {
     Row(transaction: Transaction(
         amount: 200_000,
+        category: .income,
         date: Date(),
-        description: "Salary",
-        category: .income
+        description: "Salary"
     ))
 }

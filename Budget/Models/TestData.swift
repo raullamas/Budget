@@ -11,21 +11,21 @@ struct TestData {
     static let transactions: [Transaction] = [
         Transaction(
             amount: 200_000,
+            category: .income,
             date: Date(),
-            description: "Salary",
-            category: .income
+            description: "Salary"
         ),
         Transaction(
             amount: -1_999,
+            category: .utilities,
             date: Date(),
-            description: "Phone bill",
-            category: .utilities
+            description: "Phone bill"
         ),
         Transaction(
             amount: -5_687,
+            category: .groceries,
             date: Date(),
-            description: "Food",
-            category: .groceries
+            description: "Food"
         )
     ]
     

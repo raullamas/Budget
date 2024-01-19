@@ -42,9 +42,9 @@ private extension TransactionView {
         let sign = selectedCategory == .income ? 1 : -1
         let transaction = Transaction(
             amount: Int(amount)! * 100 * sign,
+            category: selectedCategory,
             date: Date(),
-            description: description,
-            category: selectedCategory
+            description: description
         )
         
         stateController.add(transaction)
