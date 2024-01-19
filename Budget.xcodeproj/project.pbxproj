@@ -106,7 +106,6 @@
 			children = (
 				651C4F4B2B4F1CC500CAEF46 /* Account.swift */,
 				651C4F492B4F1C0800CAEF46 /* Transaction.swift */,
-				651C4F4D2B4F1D9C00CAEF46 /* TestData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -170,6 +169,7 @@
 		65B4DCD42B5AD3700049037C /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				651C4F4D2B4F1D9C00CAEF46 /* TestData.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
