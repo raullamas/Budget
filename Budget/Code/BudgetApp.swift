@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct BudgetApp: App {
-    @StateObject private var stateController = StateController()
+    @StateObject private var stateController = StateController(account: TestData.account)
     
     var body: some Scene {
         WindowGroup {
