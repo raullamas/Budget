@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Transaction: Identifiable {
+struct Transaction: Identifiable { // CORE
     enum Category: String, CaseIterable, Identifiable {
         case income, groceries, utilities
         
