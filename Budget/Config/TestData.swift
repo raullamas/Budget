@@ -31,5 +31,5 @@ struct TestData { // CORE
         description: "Salary"
     )
     
-    static let transactions: [Transaction] = [salary, phoneBill, food]
+    static let transactions = [salary, phoneBill, food]
 }
