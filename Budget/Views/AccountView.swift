@@ -21,7 +21,7 @@ struct AccountView: View {
 }
 
 private extension AccountView {
-    var transactions: [Budget.Transaction] {
+    var transactions: [Transaction] {
         return account
             .transactions
             .sorted(by: { $0.date > $1.date })
