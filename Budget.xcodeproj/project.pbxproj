@@ -114,8 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				658E02682B4F79A9006D83AF /* AccountView.swift */,
-				65B1310B2B504D520039860D /* TransactionView.swift */,
 				6506ECEC2B504B0C00D038CD /* BudgetRootView.swift */,
+				65B1310B2B504D520039860D /* TransactionView.swift */,
 				658E02632B4F735F006D83AF /* Pure */,
 			);
 			path = Views;
