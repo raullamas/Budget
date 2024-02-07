@@ -13,7 +13,7 @@ struct BudgetApp: App {
     
     var body: some Scene {
         WindowGroup {
-            BudgetView()
+            BudgetRootView()
                 .environmentObject(stateController)
         }
     }

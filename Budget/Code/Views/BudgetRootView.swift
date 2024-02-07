@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BudgetView: View {
+struct BudgetRootView: View {
     @State private var addingNewTransaction = false
     
     @EnvironmentObject private var stateController: StateController
@@ -29,7 +29,7 @@ struct BudgetView: View {
     }
 }
 
-private extension BudgetView { // USER INTERACTION
+private extension BudgetRootView { // USER INTERACTION
     func addTransaction() {
         addingNewTransaction = true
     }
