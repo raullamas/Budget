@@ -12,7 +12,7 @@ struct BudgetView: View {
     
     @EnvironmentObject private var stateController: StateController
     
-    var body: some View {
+    var body: some View { // PRESENTATION
         NavigationStack {
             AccountView(account: stateController.account)
                 .navigationBarTitle("Budget")
@@ -29,7 +29,7 @@ struct BudgetView: View {
     }
 }
 
-private extension BudgetView {
+private extension BudgetView { // USER INTERACTION
     func addTransaction() {
         addingNewTransaction = true
     }
