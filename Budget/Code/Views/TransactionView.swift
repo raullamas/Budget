@@ -14,7 +14,7 @@ struct TransactionView: View {
     
     @Binding var addingNewTransaction: Bool
     
-    @Environment(StateController.self) private var stateController
+    var stateController: StateController
     
     
     var body: some View {
@@ -57,5 +57,8 @@ private extension TransactionView {
 }
 
 #Preview {
-    TransactionView(addingNewTransaction: .constant(true))
+    TransactionView(
+        addingNewTransaction: .constant(true),
+        stateController: StateController(account: TestData.account)
+    )
 }

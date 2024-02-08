@@ -9,8 +9,7 @@ import SwiftUI
 
 struct BudgetRootView: View {
     @State private var addingNewTransaction = false
-    
-    @Environment(StateController.self) private var stateController
+    @State private var stateController = StateController(account: TestData.account)
     
     var body: some View { // PRESENTATION
         NavigationStack {
@@ -25,7 +24,10 @@ struct BudgetRootView: View {
                     }
                 }
                 .sheet(isPresented: $addingNewTransaction) {
-                    TransactionView(addingNewTransaction: $addingNewTransaction)
+                    TransactionView(
+                        addingNewTransaction: $addingNewTransaction,
+                        stateController: stateController
+                    )
                 }
         }
     }
