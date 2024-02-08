@@ -10,7 +10,7 @@ import SwiftUI
 struct BudgetRootView: View {
     @State private var addingNewTransaction = false
     
-    @EnvironmentObject private var stateController: StateController
+    @Environment(StateController.self) private var stateController
     
     var body: some View { // PRESENTATION
         NavigationStack {

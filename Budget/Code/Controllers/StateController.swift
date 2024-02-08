@@ -7,8 +7,8 @@
 
 import Foundation
 
-final class StateController: ObservableObject { // CORE
-    @Published private(set) var account: Account
+@Observable final class StateController { // CORE
+    private(set) var account: Account
     
     init(account: Account) {
         self.account = account

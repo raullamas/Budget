@@ -14,7 +14,7 @@ struct TransactionView: View {
     
     @Binding var addingNewTransaction: Bool
     
-    @EnvironmentObject private var stateController: StateController
+    @Environment(StateController.self) private var stateController
     
     
     var body: some View {
