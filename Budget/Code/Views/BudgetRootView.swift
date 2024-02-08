@@ -15,7 +15,7 @@ struct BudgetRootView: View {
     var body: some View { // PRESENTATION
         NavigationStack {
             AccountView(account: stateController.account)
-                .navigationBarTitle("Budget")
+                .navigationTitle("Budget")
                 .toolbar {
                     ToolbarItem {
                         Button(action: addTransaction) {
