@@ -16,12 +16,14 @@ struct BudgetRootView: View {
         NavigationStack {
             AccountView(account: stateController.account)
                 .navigationBarTitle("Budget")
-                .navigationBarItems(
-                    trailing: Button(action: addTransaction) {
-                        Image(systemName: "plus")
-                            .font(.title)
+                .toolbar {
+                    ToolbarItem {
+                        Button(action: addTransaction) {
+                            Image(systemName: "plus")
+                                .font(.title)
+                        }
                     }
-                )
+                }
                 .sheet(isPresented: $addingNewTransaction) {
                     TransactionView(addingNewTransaction: $addingNewTransaction)
                 }
