@@ -13,7 +13,8 @@ struct AccountView: View {
     var body: some View {
         List {
             BalanceView(amount: account.balance)
-            ForEach(transactions) { transaction in
+            // trxs = transactions
+            ForEach(sortedTrxs) { transaction in
                 RowView(transaction: transaction)
             }
         }
@@ -21,7 +22,7 @@ struct AccountView: View {
 }
 
 private extension AccountView {
-    var transactions: [Transaction] {
+    var sortedTrxs: [Transaction] {
         return account
             .transactions
             .sorted(by: { $0.date > $1.date })
