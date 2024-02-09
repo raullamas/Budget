@@ -14,7 +14,7 @@ struct AccountView: View {
         List {
             BalanceView(amount: account.balance)
             ForEach(transactions) { transaction in
-                Row(transaction: transaction)
+                RowView(transaction: transaction)
             }
         }
     }

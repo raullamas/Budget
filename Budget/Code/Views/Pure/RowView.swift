@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Row: View {
+struct RowView: View {
     let transaction: Transaction
     
     var body: some View {
@@ -44,7 +44,7 @@ struct Row: View {
 }
 
 #Preview {
-    Row(transaction: Transaction(
+    RowView(transaction: Transaction(
         amount: 200_000,
         category: .income,
         date: Date(),
