@@ -21,6 +21,7 @@ struct BudgetRootView: View {
                             Image(systemName: "plus")
                                 .font(.title)
                         }
+                        .accessibilityLabel("Add transaction")
                     }
                 }
                 .sheet(isPresented: $addingNewTransaction) {
