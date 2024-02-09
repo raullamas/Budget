@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Balance: View {
+struct BalanceView: View {
     var amount: Int
     
     var body: some View {
@@ -25,5 +25,5 @@ struct Balance: View {
 }
 
 #Preview {
-    Balance(amount: 434_500)
+    BalanceView(amount: 434_500)
 }

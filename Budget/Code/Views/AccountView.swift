@@ -12,7 +12,7 @@ struct AccountView: View {
     
     var body: some View {
         List {
-            Balance(amount: account.balance)
+            BalanceView(amount: account.balance)
             ForEach(transactions) { transaction in
                 Row(transaction: transaction)
             }
