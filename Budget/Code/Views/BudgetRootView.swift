@@ -11,7 +11,7 @@ struct BudgetRootView: View {
     @State private var addingNewTransaction = false
     @State private var stateController = StateController(account: TestData.account)
     
-    var body: some View { // PRESENTATION
+    var body: some View {
         NavigationStack {
             AccountView(account: stateController.account)
                 .navigationTitle("Budget")
@@ -34,7 +34,7 @@ struct BudgetRootView: View {
     }
 }
 
-private extension BudgetRootView { // USER INTERACTION
+private extension BudgetRootView {
     func addTransaction() {
         addingNewTransaction = true
     }
