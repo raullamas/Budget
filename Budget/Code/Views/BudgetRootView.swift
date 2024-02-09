@@ -16,13 +16,7 @@ struct BudgetRootView: View {
             AccountView(account: stateController.account)
                 .navigationTitle("Budget")
                 .toolbar {
-                    ToolbarItem {
-                        Button(action: addTransaction) {
-                            Image(systemName: "plus")
-                                .font(.title)
-                        }
-                        .accessibilityLabel("Add transaction")
-                    }
+                    ToolbarItem { addButton.accessibilityLabel("Add transaction") }
                 }
                 .sheet(isPresented: $addingNewTransaction) {
                     TransactionView(
@@ -35,6 +29,13 @@ struct BudgetRootView: View {
 }
 
 private extension BudgetRootView {
+    var addButton: some View {
+        Button(action: addTransaction) {
+            Image(systemName: "plus")
+                .font(.title)
+        }
+    }
+    
     func addTransaction() {
         addingNewTransaction = true
     }
