@@ -113,7 +113,6 @@
 		651C4F4F2B4F1EFE00CAEF46 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				658E02682B4F79A9006D83AF /* AccountView.swift */,
 				6506ECEC2B504B0C00D038CD /* BudgetRootView.swift */,
 				65B1310B2B504D520039860D /* TransactionView.swift */,
 				658E02632B4F735F006D83AF /* Pure */,
@@ -143,6 +142,7 @@
 		658E02632B4F735F006D83AF /* Pure */ = {
 			isa = PBXGroup;
 			children = (
+				658E02682B4F79A9006D83AF /* AccountView.swift */,
 				651C4F502B4F1F1400CAEF46 /* CategoryView.swift */,
 				658E02642B4F738A006D83AF /* BalanceView.swift */,
 				658E02662B4F748C006D83AF /* RowView.swift */,
