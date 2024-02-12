@@ -13,9 +13,9 @@ struct TransactionView: View {
     @State private var description: String = ""
     
     // trx: transaction
-    @Binding var addingNewTrx: Bool
+    @Binding private(set) var addingNewTrx: Bool
     
-    var stateController: StateController
+    let stateController: StateController
     
     
     var body: some View {
