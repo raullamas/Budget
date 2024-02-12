@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct BudgetRootView: View {
-    @State private var addingNewTransaction = false
+    // trx: transaction
+    @State private var addingNewTrx = false
     @State private var stateController = StateController(account: TestData.account)
     
     var body: some View {
@@ -16,9 +17,9 @@ struct BudgetRootView: View {
             AccountView(account: stateController.account)
                 .navigationTitle("Budget")
                 .toolbar { ToolbarItem { addButton } }
-                .sheet(isPresented: $addingNewTransaction) {
+                .sheet(isPresented: $addingNewTrx) {
                     TransactionView(
-                        addingNewTransaction: $addingNewTransaction,
+                        addingNewTransaction: $addingNewTrx,
                         stateController: stateController
                     )
                 }
@@ -36,7 +37,7 @@ private extension BudgetRootView {
     }
     
     func addTransaction() {
-        addingNewTransaction = true
+        addingNewTrx = true
     }
 }
 
