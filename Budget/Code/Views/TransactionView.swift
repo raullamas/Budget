@@ -28,15 +28,10 @@ struct TransactionView: View {
             .navigationTitle("New Transaction")
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
-                    Button(action: { self.dismiss() }) {
-                        Text("Cancel")
-                    }
+                    cancelButton
                 }
                 ToolbarItem {
-                    Button(action: addTransaction) {
-                        Text("Add")
-                            .bold()
-                    }
+                    addButton
                 }
             }
         }
@@ -44,6 +39,19 @@ struct TransactionView: View {
 }
 
 private extension TransactionView {
+    var cancelButton: some View {
+        Button(action: { self.dismiss() }) {
+            Text("Cancel")
+        }
+    }
+    
+    var addButton: some View {
+        Button(action: addTransaction) {
+            Text("Add")
+                .bold()
+        }
+    }
+    
     func addTransaction() {
         let sign = selectedCategory == .income ? 1 : -1
         let transaction = Transaction(
