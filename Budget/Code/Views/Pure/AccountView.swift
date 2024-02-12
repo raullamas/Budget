@@ -23,9 +23,9 @@ struct AccountView: View {
 
 private extension AccountView {
     var sortedTrxs: [Transaction] {
-        return account
-            .transactions
-            .sorted(by: { $0.date > $1.date })
+        return account.transactions.sorted(
+            by: { $0.date > $1.date }
+        )
     }
 }
 
