@@ -25,15 +25,20 @@ struct TransactionView: View {
                 selectedCategory: $selectedCategory,
                 description: $description
             )
-            .navigationBarTitle("New Transaction")
-            .navigationBarItems(
-                leading: Button(action: { self.dismiss() }) {
-                    Text("Cancel")
-                }, trailing: Button(action: addTransaction) {
-                    Text("Add")
-                        .bold()
+            .navigationTitle("New Transaction")
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button(action: { self.dismiss() }) {
+                        Text("Cancel")
+                    }
                 }
-            )
+                ToolbarItem {
+                    Button(action: addTransaction) {
+                        Text("Add")
+                            .bold()
+                    }
+                }
+            }
         }
     }
 }
