@@ -10,7 +10,9 @@ import SwiftUI
 struct BudgetRootView: View {
     // trx: transaction
     @State private var addingNewTrx = false
-    @State private var stateController = StateController(account: TestData.account)
+    @State private var stateController = StateController(
+        account: TestData.account
+    )
     
     var body: some View {
         NavigationStack {
