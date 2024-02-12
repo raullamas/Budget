@@ -38,9 +38,7 @@ private extension BudgetRootView {
         .accessibilityLabel("Add transaction")
     }
     
-    func addTransaction() {
-        addingNewTrx = true
-    }
+    func addTransaction() { addingNewTrx = true }
 }
 
 //#Preview {
