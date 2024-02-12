@@ -13,7 +13,7 @@ struct AccountView: View {
     var body: some View {
         List {
             BalanceView(amount: account.balance)
-            // trxs = transactions
+            // trxs: transactions
             ForEach(sortedTrxs) { transaction in
                 RowView(transaction: transaction)
             }
