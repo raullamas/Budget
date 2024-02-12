@@ -12,7 +12,8 @@ struct TransactionView: View {
     @State private var selectedCategory: Transaction.Category = .groceries
     @State private var description: String = ""
     
-    @Binding var addingNewTransaction: Bool
+    // trx: transaction
+    @Binding var addingNewTrx: Bool
     
     var stateController: StateController
     
@@ -52,13 +53,13 @@ private extension TransactionView {
     }
     
     func dismiss() {
-        addingNewTransaction = false
+        addingNewTrx = false
     }
 }
 
 #Preview {
     TransactionView(
-        addingNewTransaction: .constant(true),
+        addingNewTrx: .constant(true),
         stateController: StateController(account: TestData.account)
     )
 }
