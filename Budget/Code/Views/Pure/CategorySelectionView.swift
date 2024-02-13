@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CategorySelectionView: View {
-    @Binding var selectedCategory: Transaction.Category
+    @Binding var selectedCat: Transaction.Category
     
     var body: some View {
         HStack {
@@ -16,8 +16,8 @@ struct CategorySelectionView: View {
             ForEach(Transaction.Category.allCases) { category in
                 CategoryButton(
                     category: category,
-                    action: { self.selectedCategory = category },
-                    selected: category == self.selectedCategory
+                    action: { self.selectedCat = category },
+                    selected: category == self.selectedCat
                 )
                 Spacer()
             }
@@ -27,5 +27,5 @@ struct CategorySelectionView: View {
 }
 
 #Preview {
-    CategorySelectionView(selectedCategory: .constant(.utilities))
+    CategorySelectionView(selectedCat: .constant(.utilities))
 }

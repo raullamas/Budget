@@ -12,7 +12,8 @@ struct TransactionView: View {
     @Binding private(set) var addingNewTrx: Bool
     
     @State private var amount: String = ""
-    @State private var selectedCategory: Transaction.Category = .groceries
+    // cat: category
+    @State private var selectedCat: Transaction.Category = .groceries
     @State private var description: String = ""
     
     let stateController: StateController
@@ -22,7 +23,7 @@ struct TransactionView: View {
         NavigationStack {
             TransactionContent(
                 amount: $amount,
-                selectedCategory: $selectedCategory,
+                selectedCat: $selectedCat,
                 description: $description
             )
             .navigationTitle("New Transaction")
@@ -53,10 +54,10 @@ private extension TransactionView {
     }
     
     func addTransaction() {
-        let sign = selectedCategory == .income ? 1 : -1
+        let sign = selectedCat == .income ? 1 : -1
         let transaction = Transaction(
             amount: Int(amount)! * 100 * sign,
-            category: selectedCategory,
+            category: selectedCat,
             date: Date(),
             description: description
         )

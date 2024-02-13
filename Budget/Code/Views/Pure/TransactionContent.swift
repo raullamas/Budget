@@ -9,13 +9,14 @@ import SwiftUI
 
 struct TransactionContent: View {
     @Binding var amount: String
-    @Binding var selectedCategory: Transaction.Category
+    // cat: category
+    @Binding var selectedCat: Transaction.Category
     @Binding var description: String
     
     var body: some View {
         List {
             Amount(amount: $amount)
-            CategorySelectionView(selectedCategory: $selectedCategory)
+            CategorySelectionView(selectedCat: $selectedCat)
                 .buttonStyle(PlainButtonStyle())
             TextField("Description", text: $description)
         }
@@ -25,7 +26,7 @@ struct TransactionContent: View {
 #Preview {
     TransactionContent(
         amount: .constant(String(-1_999)),
-        selectedCategory: .constant(.utilities),
+        selectedCat: .constant(.utilities),
         description: .constant("")
     )
 }
