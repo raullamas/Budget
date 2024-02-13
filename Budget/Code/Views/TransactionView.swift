@@ -12,8 +12,8 @@ struct TransactionView: View {
     @Binding private(set) var addingNewTrx: Bool
     
     @State private var amount: String = ""
-    // cat: category
     @State private var description: String = ""
+    // cat: category
     @State private var selectedCat: Transaction.Category = .groceries
     
     let stateController: StateController
