@@ -37,11 +37,11 @@ struct TransactionView: View {
 
 private extension TransactionView {
     var addButton: some View {
-        Button(action: addTransaction) { Text("Add").bold() }
+        Button("Add", action: addTransaction).bold()
     }
     
     var cancelButton: some View {
-        Button(action: { self.dismiss() }) { Text("Cancel") }
+        Button("Cancel", action: dismiss)
     }
     
     func addTransaction() {
