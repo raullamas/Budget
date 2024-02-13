@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TransactionView: View {
+struct TransactionRootView: View {
     // trx: transaction
     @Binding private(set) var addingNewTrx: Bool
     
@@ -34,7 +34,7 @@ struct TransactionView: View {
     }
 }
 
-private extension TransactionView {
+private extension TransactionRootView {
     var addButton: some View {
         Button("Add", action: addTransaction).bold()
     }
@@ -60,7 +60,7 @@ private extension TransactionView {
 }
 
 #Preview {
-    TransactionView(
+    TransactionRootView(
         addingNewTrx: .constant(true),
         stateController: StateController(account: TestData.account)
     )
