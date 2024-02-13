@@ -18,7 +18,6 @@ struct TransactionView: View {
     
     let stateController: StateController
     
-    
     var body: some View {
         NavigationStack {
             TransactionContent(
