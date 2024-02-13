@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct TransactionView: View {
+    // trx: transaction
+    @Binding private(set) var addingNewTrx: Bool
+    
     @State private var amount: String = ""
     @State private var selectedCategory: Transaction.Category = .groceries
     @State private var description: String = ""
-    
-    // trx: transaction
-    @Binding private(set) var addingNewTrx: Bool
     
     let stateController: StateController
     
