@@ -9,9 +9,9 @@ import SwiftUI
 
 struct TransactionContent: View {
     @Binding var amount: String
+    @Binding var description: String
     // cat: category
     @Binding var selectedCat: Transaction.Category
-    @Binding var description: String
     
     var body: some View {
         List {
@@ -26,7 +26,7 @@ struct TransactionContent: View {
 #Preview {
     TransactionContent(
         amount: .constant(String(-1_999)),
-        selectedCat: .constant(.utilities),
-        description: .constant("")
+        description: .constant(""),
+        selectedCat: .constant(.utilities)
     )
 }

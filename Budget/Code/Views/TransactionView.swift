@@ -13,8 +13,8 @@ struct TransactionView: View {
     
     @State private var amount: String = ""
     // cat: category
-    @State private var selectedCat: Transaction.Category = .groceries
     @State private var description: String = ""
+    @State private var selectedCat: Transaction.Category = .groceries
     
     let stateController: StateController
     
@@ -23,8 +23,8 @@ struct TransactionView: View {
         NavigationStack {
             TransactionContent(
                 amount: $amount,
-                selectedCat: $selectedCat,
-                description: $description
+                description: $description,
+                selectedCat: $selectedCat
             )
             .navigationTitle("New Transaction")
             .toolbar {
@@ -40,16 +40,16 @@ struct TransactionView: View {
 }
 
 private extension TransactionView {
-    var cancelButton: some View {
-        Button(action: { self.dismiss() }) {
-            Text("Cancel")
-        }
-    }
-    
     var addButton: some View {
         Button(action: addTransaction) {
             Text("Add")
                 .bold()
+        }
+    }
+    
+    var cancelButton: some View {
+        Button(action: { self.dismiss() }) {
+            Text("Cancel")
         }
     }
     
