@@ -28,12 +28,8 @@ struct TransactionView: View {
             )
             .navigationTitle("New Transaction")
             .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    cancelButton
-                }
-                ToolbarItem {
-                    addButton
-                }
+                ToolbarItem(placement: .topBarLeading) { cancelButton }
+                ToolbarItem { addButton }
             }
         }
     }
@@ -41,16 +37,11 @@ struct TransactionView: View {
 
 private extension TransactionView {
     var addButton: some View {
-        Button(action: addTransaction) {
-            Text("Add")
-                .bold()
-        }
+        Button(action: addTransaction) { Text("Add").bold() }
     }
     
     var cancelButton: some View {
-        Button(action: { self.dismiss() }) {
-            Text("Cancel")
-        }
+        Button(action: { self.dismiss() }) { Text("Cancel") }
     }
     
     func addTransaction() {
@@ -66,9 +57,7 @@ private extension TransactionView {
         dismiss()
     }
     
-    func dismiss() {
-        addingNewTrx = false
-    }
+    func dismiss() { addingNewTrx = false }
 }
 
 #Preview {
