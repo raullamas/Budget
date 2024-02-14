@@ -15,7 +15,7 @@ struct TransactionRootView: View {
     
     var body: some View {
         NavigationStack {
-            TransactionContent(
+            TrxContentView(
                 amount: $amount,
                 description: $description,
                 selectedCat: $selectedCat

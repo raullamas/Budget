@@ -2,7 +2,7 @@
 
 import SwiftUI
 
-struct CategorySelectionView: View {
+struct CatSelectionView: View {
     @Binding var selectedCat: Transaction.Category
     
     var body: some View {
@@ -22,5 +22,5 @@ struct CategorySelectionView: View {
 }
 
 #Preview {
-    CategorySelectionView(selectedCat: .constant(.utilities))
+    CatSelectionView(selectedCat: .constant(.utilities))
 }

@@ -2,7 +2,8 @@
 
 import SwiftUI
 
-struct TransactionContent: View {
+// trx: transaction
+struct TrxContentView: View {
     @Binding private(set) var amount: String
     @Binding private(set) var description: String
     // cat: category
@@ -10,8 +11,9 @@ struct TransactionContent: View {
     
     var body: some View {
         List {
-            Amount(amount: $amount)
-            CategorySelectionView(selectedCat: $selectedCat)
+            AmountView(amount: $amount)
+            // cat: category
+            CatSelectionView(selectedCat: $selectedCat)
                 .buttonStyle(.plain)
             TextField("Description", text: $description)
         }
@@ -19,7 +21,7 @@ struct TransactionContent: View {
 }
 
 #Preview {
-    TransactionContent(
+    TrxContentView(
         amount: .constant(String(-1_999)),
         description: .constant(""),
         selectedCat: .constant(.utilities)
