@@ -6,7 +6,6 @@ import SwiftUI
 struct TrxContentView: View {
     @Binding private(set) var amount: String
     @Binding private(set) var description: String
-    // cat: category
     @Binding private(set) var selectedCat: Transaction.Category
     
     var body: some View {

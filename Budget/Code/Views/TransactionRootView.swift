@@ -3,7 +3,6 @@
 import SwiftUI
 
 struct TransactionRootView: View {
-    // trx: transaction
     @Binding private(set) var addingNewTrx: Bool
     
     @State private var amount = ""
