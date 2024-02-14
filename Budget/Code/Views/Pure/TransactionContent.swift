@@ -12,7 +12,7 @@ struct TransactionContent: View {
         List {
             Amount(amount: $amount)
             CategorySelectionView(selectedCat: $selectedCat)
-                .buttonStyle(PlainButtonStyle())
+                .buttonStyle(.plain)
             TextField("Description", text: $description)
         }
     }
