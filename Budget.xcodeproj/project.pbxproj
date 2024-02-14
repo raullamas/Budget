@@ -28,6 +28,7 @@
 		658E026B2B4F7B93006D83AF /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E026A2B4F7B93006D83AF /* Amount.swift */; };
 		658E026D2B4F7D46006D83AF /* CategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E026C2B4F7D46006D83AF /* CategoryButton.swift */; };
 		65B1310C2B504D520039860D /* TransactionRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1310B2B504D520039860D /* TransactionRootView.swift */; };
+		65CD60F92B7CF23E003624F8 /* fileQC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 65CD60F82B7CF23E003624F8 /* fileQC.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		658E026A2B4F7B93006D83AF /* Amount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
 		658E026C2B4F7D46006D83AF /* CategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButton.swift; sourceTree = "<group>"; };
 		65B1310B2B504D520039860D /* TransactionRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRootView.swift; sourceTree = "<group>"; };
+		65CD60F82B7CF23E003624F8 /* fileQC.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = fileQC.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 		65CD60F62B7CF0A8003624F8 /* Docs */ = {
 			isa = PBXGroup;
 			children = (
+				65CD60F82B7CF23E003624F8 /* fileQC.txt */,
 			);
 			path = Docs;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65CD60F92B7CF23E003624F8 /* fileQC.txt in Resources */,
 				651C4F422B4F1BC900CAEF46 /* Preview Assets.xcassets in Resources */,
 				651C4F3F2B4F1BC900CAEF46 /* Assets.xcassets in Resources */,
 			);

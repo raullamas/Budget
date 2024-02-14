@@ -1,0 +1,19 @@
+FILE QUALITY CONTROL
+
+============
+
+MARKED AS CLEAN
+
+- BudgetApp: rLamas, 02/07/24
+
+- StateController: rLamas, 02/07/24
+
+- Account: rLamas, 02/07/24
+- Transaction: rLamas, 02/07/24
+
+- BudgetRootView: rLamas, 02/09/24
+- TransactionRootView: rLamas, 02/13/24
+
+- AccountView: rLamas, 02/12/24
+
+============
