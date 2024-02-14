@@ -1,9 +1,4 @@
 //
-//  Amount.swift
-//  Budget
-//
-//  Created by Raul Lamas on 1/10/24.
-//
 
 import SwiftUI
 

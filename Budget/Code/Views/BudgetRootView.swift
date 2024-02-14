@@ -1,9 +1,4 @@
 //
-//  BudgetView.swift
-//  Budget
-//
-//  Created by Raul Lamas on 1/11/24.
-//  Marked as Clean by Raul Lamas on 2/9/24.
 
 import SwiftUI
 
