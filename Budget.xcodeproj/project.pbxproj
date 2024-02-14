@@ -87,8 +87,9 @@
 			children = (
 				65B4DCD32B5AD0D80049037C /* Code */,
 				65B4DCD42B5AD3700049037C /* Config */,
-				65B4DCD52B5AD37E0049037C /* Resources */,
+				65CD60F62B7CF0A8003624F8 /* Docs */,
 				651C4F402B4F1BC900CAEF46 /* Preview Content */,
+				65B4DCD52B5AD37E0049037C /* Resources */,
 			);
 			path = Budget;
 			sourceTree = "<group>";
@@ -180,6 +181,13 @@
 				651C4F3E2B4F1BC900CAEF46 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		65CD60F62B7CF0A8003624F8 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
