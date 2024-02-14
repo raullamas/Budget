@@ -3,10 +3,10 @@
 import SwiftUI
 
 struct TransactionContent: View {
-    @Binding var amount: String
-    @Binding var description: String
+    @Binding private(set) var amount: String
+    @Binding private(set) var description: String
     // cat: category
-    @Binding var selectedCat: Transaction.Category
+    @Binding private(set) var selectedCat: Transaction.Category
     
     var body: some View {
         List {
