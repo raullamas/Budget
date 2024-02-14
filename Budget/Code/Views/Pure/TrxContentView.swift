@@ -11,7 +11,6 @@ struct TrxContentView: View {
     var body: some View {
         List {
             AmountView(amount: $amount)
-            // cat: category
             CatSelectionView(selectedCat: $selectedCat)
                 .buttonStyle(.plain)
             TextField("Description", text: $description)
