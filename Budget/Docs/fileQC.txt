@@ -15,5 +15,6 @@ MARKED AS CLEAN
 - TransactionRootView: rLamas, 02/13/24
 
 - AccountView: rLamas, 02/12/24
+- TrxContentView: rLamas, 02/14/24
 
 ============
