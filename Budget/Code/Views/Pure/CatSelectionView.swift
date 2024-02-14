@@ -2,6 +2,7 @@
 
 import SwiftUI
 
+// cat: category
 struct CatSelectionView: View {
     @Binding var selectedCat: Transaction.Category
     
