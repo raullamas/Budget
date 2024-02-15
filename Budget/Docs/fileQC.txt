@@ -4,12 +4,12 @@ FILE QUALITY CONTROL
 
 MARKED AS CLEAN
 
-- BudgetApp: rLamas, 02/07/24
+- BudgetApp: rLamas, 02/15/24
 
 - AccountController: rLamas, 02/15/24
 
-- Account: rLamas, 02/07/24
-- Transaction: rLamas, 02/07/24
+- Account: rLamas, 02/15/24
+- Transaction: rLamas, 02/15/24
 
 - BudgetView: rLamas, 02/15/24
 - NewTransactionView: rLamas, 02/15/24
