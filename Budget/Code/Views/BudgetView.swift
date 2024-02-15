@@ -3,21 +3,20 @@
 import SwiftUI
 
 struct BudgetView: View {
-    // trx: transaction
-    @State private var addingNewTrx = false
-    @State private var stateController = StateController(
+    @State private var isAddingTransaction = false
+    @State private var accountController = StateController(
         account: TestData.account
     )
     
     var body: some View {
         NavigationStack {
-            AccountView(account: stateController.account)
+            AccountView(account: accountController.account)
                 .navigationTitle("Budget")
                 .toolbar { ToolbarItem { addButton } }
-                .sheet(isPresented: $addingNewTrx) {
+                .sheet(isPresented: $isAddingTransaction) {
                     NewTransactionView(
-                        isAddingTransaction: $addingNewTrx,
-                        stateController: stateController
+                        isAddingTransaction: $isAddingTransaction,
+                        stateController: accountController
                     )
                 }
         }
@@ -33,7 +32,7 @@ private extension BudgetView {
         .accessibilityLabel("Add transaction")
     }
     
-    func addTransaction() { addingNewTrx = true }
+    func addTransaction() { isAddingTransaction = true }
 }
 
 //#Preview {
