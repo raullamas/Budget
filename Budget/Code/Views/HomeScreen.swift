@@ -2,7 +2,7 @@
 
 import SwiftUI
 
-struct BudgetView: View {
+struct HomeScreen: View {
     @State private var isAddingTransaction = false
     @State private var accountController = AccountController(
         account: TestData.account
@@ -23,7 +23,7 @@ struct BudgetView: View {
     }
 }
 
-private extension BudgetView {
+private extension HomeScreen {
     var addButton: some View {
         Button(action: addTransaction) {
             Image(systemName: "plus")
