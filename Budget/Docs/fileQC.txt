@@ -11,7 +11,7 @@ MARKED AS CLEAN
 - Account: rLamas, 02/07/24
 - Transaction: rLamas, 02/07/24
 
-- BudgetRootView: rLamas, 02/09/24
+- BudgetView: rLamas, 02/15/24
 - NewTransactionView: rLamas, 02/15/24
 
 - AccountView: rLamas, 02/12/24
