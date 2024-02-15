@@ -16,7 +16,7 @@ struct NewTransactionView: View {
             TransactionForm(
                 amount: $amount,
                 description: $description,
-                selectedCat: $selectedCategory
+                selectedCategory: $selectedCategory
             )
             .navigationTitle("New Transaction")
             .toolbar {

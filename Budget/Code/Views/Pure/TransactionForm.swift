@@ -6,12 +6,12 @@ import SwiftUI
 struct TransactionForm: View {
     @Binding private(set) var amount: String
     @Binding private(set) var description: String
-    @Binding private(set) var selectedCat: Transaction.Category
+    @Binding private(set) var selectedCategory: Transaction.Category
     
     var body: some View {
         List {
             AmountView(amount: $amount)
-            CatSelectionView(selectedCat: $selectedCat)
+            CatSelectionView(selectedCat: $selectedCategory)
                 .buttonStyle(.plain)
             TextField("Description", text: $description)
         }
@@ -22,6 +22,6 @@ struct TransactionForm: View {
     TransactionForm(
         amount: .constant(String(-1_999)),
         description: .constant(""),
-        selectedCat: .constant(.utilities)
+        selectedCategory: .constant(.utilities)
     )
 }
