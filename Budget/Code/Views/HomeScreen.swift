@@ -16,7 +16,7 @@ struct HomeScreen: View {
                 .sheet(isPresented: $isAddingTransaction) {
                     AddTransactionModal(
                         isAddingTransaction: $isAddingTransaction,
-                        stateController: accountController
+                        accountController: accountController
                     )
                 }
         }

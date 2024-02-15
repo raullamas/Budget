@@ -9,7 +9,7 @@ struct AddTransactionModal: View {
     @State private var description = ""
     @State private var selectedCategory: Transaction.Category = .groceries
     
-    let stateController: AccountController
+    let accountController: AccountController
     
     var body: some View {
         NavigationStack {
@@ -45,7 +45,7 @@ private extension AddTransactionModal {
             description: description
         )
         
-        stateController.add(transaction)
+        accountController.add(transaction)
         dismiss()
     }
     
@@ -55,6 +55,6 @@ private extension AddTransactionModal {
 #Preview {
     AddTransactionModal(
         isAddingTransaction: .constant(true),
-        stateController: AccountController(account: TestData.account)
+        accountController: AccountController(account: TestData.account)
     )
 }
