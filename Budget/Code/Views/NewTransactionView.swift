@@ -13,7 +13,7 @@ struct NewTransactionView: View {
     
     var body: some View {
         NavigationStack {
-            TrxContentView(
+            TransactionForm(
                 amount: $amount,
                 description: $description,
                 selectedCat: $selectedCategory
