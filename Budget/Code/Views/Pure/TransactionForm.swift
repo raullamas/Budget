@@ -2,7 +2,6 @@
 
 import SwiftUI
 
-// trx: transaction
 struct TransactionForm: View {
     @Binding private(set) var amount: String
     @Binding private(set) var description: String
