@@ -14,7 +14,7 @@ MARKED AS CLEAN
 - BudgetView: rLamas, 02/15/24
 - NewTransactionView: rLamas, 02/15/24
 
-- AccountView: rLamas, 02/12/24
+- AccountView: rLamas, 02/15/24
 - TrxContentView: rLamas, 02/14/24
 
 ============
