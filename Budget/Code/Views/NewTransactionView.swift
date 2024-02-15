@@ -3,12 +3,11 @@
 import SwiftUI
 
 struct NewTransactionView: View {
-    @Binding private(set) var addingNewTrx: Bool
+    @Binding private(set) var isAddingTransaction: Bool
     
     @State private var amount = ""
     @State private var description = ""
-    // cat: category
-    @State private var selectedCat: Transaction.Category = .groceries
+    @State private var selectedCategory: Transaction.Category = .groceries
     
     let stateController: StateController
     
@@ -17,7 +16,7 @@ struct NewTransactionView: View {
             TrxContentView(
                 amount: $amount,
                 description: $description,
-                selectedCat: $selectedCat
+                selectedCat: $selectedCategory
             )
             .navigationTitle("New Transaction")
             .toolbar {
@@ -38,10 +37,10 @@ private extension NewTransactionView {
     }
     
     func addTransaction() {
-        let sign = selectedCat == .income ? 1 : -1
+        let sign = selectedCategory == .income ? 1 : -1
         let transaction = Transaction(
             amount: Int(amount)! * 100 * sign,
-            category: selectedCat,
+            category: selectedCategory,
             date: Date(),
             description: description
         )
@@ -50,12 +49,12 @@ private extension NewTransactionView {
         dismiss()
     }
     
-    func dismiss() { addingNewTrx = false }
+    func dismiss() { isAddingTransaction = false }
 }
 
 #Preview {
     NewTransactionView(
-        addingNewTrx: .constant(true),
+        isAddingTransaction: .constant(true),
         stateController: StateController(account: TestData.account)
     )
 }

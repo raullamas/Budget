@@ -16,7 +16,7 @@ struct BudgetRootView: View {
                 .toolbar { ToolbarItem { addButton } }
                 .sheet(isPresented: $addingNewTrx) {
                     NewTransactionView(
-                        addingNewTrx: $addingNewTrx,
+                        isAddingTransaction: $addingNewTrx,
                         stateController: stateController
                     )
                 }
