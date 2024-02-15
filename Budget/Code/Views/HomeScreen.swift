@@ -14,7 +14,7 @@ struct HomeScreen: View {
                 .navigationTitle("Budget")
                 .toolbar { ToolbarItem { addButton } }
                 .sheet(isPresented: $isAddingTransaction) {
-                    NewTransactionView(
+                    AddTransactionModal(
                         isAddingTransaction: $isAddingTransaction,
                         stateController: accountController
                     )

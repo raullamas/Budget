@@ -2,7 +2,7 @@
 
 import SwiftUI
 
-struct NewTransactionView: View {
+struct AddTransactionModal: View {
     @Binding private(set) var isAddingTransaction: Bool
     
     @State private var amount = ""
@@ -27,7 +27,7 @@ struct NewTransactionView: View {
     }
 }
 
-private extension NewTransactionView {
+private extension AddTransactionModal {
     var addButton: some View {
         Button("Add", action: addTransaction).bold()
     }
@@ -53,7 +53,7 @@ private extension NewTransactionView {
 }
 
 #Preview {
-    NewTransactionView(
+    AddTransactionModal(
         isAddingTransaction: .constant(true),
         stateController: AccountController(account: TestData.account)
     )

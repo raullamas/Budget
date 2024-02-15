@@ -12,7 +12,7 @@ MARKED AS CLEAN
 - Transaction: rLamas, 02/15/24
 
 - HomeScreen: rLamas, 02/15/24
-- NewTransactionView: rLamas, 02/15/24
+- AddTransactionModal: rLamas, 02/15/24
 
 - AccountView: rLamas, 02/15/24
 - TransactionForm: rLamas, 02/15/24
