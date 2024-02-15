@@ -9,7 +9,7 @@ struct NewTransactionView: View {
     @State private var description = ""
     @State private var selectedCategory: Transaction.Category = .groceries
     
-    let stateController: StateController
+    let stateController: AccountController
     
     var body: some View {
         NavigationStack {
@@ -55,6 +55,6 @@ private extension NewTransactionView {
 #Preview {
     NewTransactionView(
         isAddingTransaction: .constant(true),
-        stateController: StateController(account: TestData.account)
+        stateController: AccountController(account: TestData.account)
     )
 }

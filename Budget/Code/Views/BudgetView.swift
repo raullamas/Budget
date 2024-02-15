@@ -4,7 +4,7 @@ import SwiftUI
 
 struct BudgetView: View {
     @State private var isAddingTransaction = false
-    @State private var accountController = StateController(
+    @State private var accountController = AccountController(
         account: TestData.account
     )
     
