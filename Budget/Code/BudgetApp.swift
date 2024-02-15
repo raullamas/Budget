@@ -6,7 +6,7 @@ import SwiftUI
 struct BudgetApp: App {
     var body: some Scene {
         WindowGroup {
-            BudgetRootView()
+            BudgetView()
         }
     }
 }

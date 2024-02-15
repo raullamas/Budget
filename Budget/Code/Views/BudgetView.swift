@@ -2,7 +2,7 @@
 
 import SwiftUI
 
-struct BudgetRootView: View {
+struct BudgetView: View {
     // trx: transaction
     @State private var addingNewTrx = false
     @State private var stateController = StateController(
@@ -24,7 +24,7 @@ struct BudgetRootView: View {
     }
 }
 
-private extension BudgetRootView {
+private extension BudgetView {
     var addButton: some View {
         Button(action: addTransaction) {
             Image(systemName: "plus")
