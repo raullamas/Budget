@@ -12,7 +12,7 @@ MARKED AS CLEAN
 - Transaction: rLamas, 02/07/24
 
 - BudgetRootView: rLamas, 02/09/24
-- TransactionRootView: rLamas, 02/13/24
+- NewTransactionView: rLamas, 02/15/24
 
 - AccountView: rLamas, 02/12/24
 - TrxContentView: rLamas, 02/14/24
