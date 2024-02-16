@@ -25,7 +25,7 @@
 		658E02652B4F738A006D83AF /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E02642B4F738A006D83AF /* BalanceView.swift */; };
 		658E02672B4F748C006D83AF /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E02662B4F748C006D83AF /* RowView.swift */; };
 		658E02692B4F79A9006D83AF /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E02682B4F79A9006D83AF /* AccountView.swift */; };
-		658E026B2B4F7B93006D83AF /* AmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E026A2B4F7B93006D83AF /* AmountView.swift */; };
+		658E026B2B4F7B93006D83AF /* AmountTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E026A2B4F7B93006D83AF /* AmountTextField.swift */; };
 		658E026D2B4F7D46006D83AF /* CategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E026C2B4F7D46006D83AF /* CategoryButton.swift */; };
 		65B1310C2B504D520039860D /* AddTransactionModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1310B2B504D520039860D /* AddTransactionModal.swift */; };
 		65CD60F92B7CF23E003624F8 /* fileQC.txt in Resources */ = {isa = PBXBuildFile; fileRef = 65CD60F82B7CF23E003624F8 /* fileQC.txt */; };
@@ -51,7 +51,7 @@
 		658E02642B4F738A006D83AF /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
 		658E02662B4F748C006D83AF /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		658E02682B4F79A9006D83AF /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
-		658E026A2B4F7B93006D83AF /* AmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountView.swift; sourceTree = "<group>"; };
+		658E026A2B4F7B93006D83AF /* AmountTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountTextField.swift; sourceTree = "<group>"; };
 		658E026C2B4F7D46006D83AF /* CategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButton.swift; sourceTree = "<group>"; };
 		65B1310B2B504D520039860D /* AddTransactionModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionModal.swift; sourceTree = "<group>"; };
 		65CD60F82B7CF23E003624F8 /* fileQC.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = fileQC.txt; sourceTree = "<group>"; };
@@ -149,7 +149,7 @@
 				651C4F502B4F1F1400CAEF46 /* CategoryView.swift */,
 				658E02642B4F738A006D83AF /* BalanceView.swift */,
 				658E02662B4F748C006D83AF /* RowView.swift */,
-				658E026A2B4F7B93006D83AF /* AmountView.swift */,
+				658E026A2B4F7B93006D83AF /* AmountTextField.swift */,
 				658E026C2B4F7D46006D83AF /* CategoryButton.swift */,
 				656606772B501F1F00E0B98A /* CatSelectionView.swift */,
 				656606792B50213F00E0B98A /* TransactionForm.swift */,
@@ -266,7 +266,7 @@
 			files = (
 				656606762B501D4900E0B98A /* Transaction.Category+imageName.swift in Sources */,
 				658E02692B4F79A9006D83AF /* AccountView.swift in Sources */,
-				658E026B2B4F7B93006D83AF /* AmountView.swift in Sources */,
+				658E026B2B4F7B93006D83AF /* AmountTextField.swift in Sources */,
 				6566067D2B5027CB00E0B98A /* AccountController.swift in Sources */,
 				65B1310C2B504D520039860D /* AddTransactionModal.swift in Sources */,
 				651C4F4C2B4F1CC500CAEF46 /* Account.swift in Sources */,

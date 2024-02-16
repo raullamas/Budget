@@ -9,7 +9,7 @@ struct TransactionForm: View {
     
     var body: some View {
         List {
-            AmountView(amount: $amount)
+            AmountTextField(amount: $amount)
             CatSelectionView(selectedCat: $selectedCategory)
                 .buttonStyle(.plain)
             TextField("Description", text: $description)

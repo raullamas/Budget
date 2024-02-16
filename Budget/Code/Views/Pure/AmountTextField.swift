@@ -2,7 +2,7 @@
 
 import SwiftUI
 
-struct AmountView: View {
+struct AmountTextField: View {
     @Binding private(set) var amount: String
     
     var body: some View {
@@ -22,5 +22,5 @@ struct AmountView: View {
 }
 
 #Preview {
-    AmountView(amount: .constant("0.00"))
+    AmountTextField(amount: .constant("0.00"))
 }
