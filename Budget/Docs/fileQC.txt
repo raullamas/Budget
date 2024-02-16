@@ -15,6 +15,7 @@ MARKED AS CLEAN
 - AddTransactionModal: rLamas, 02/15/24
 
 - AccountView: rLamas, 02/15/24
+- AmountTextField: rLamas, 02/16/24
 - TransactionForm: rLamas, 02/15/24
 
 ============
