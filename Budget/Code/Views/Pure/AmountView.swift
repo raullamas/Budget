@@ -3,7 +3,7 @@
 import SwiftUI
 
 struct AmountView: View {
-    @Binding var amount: String
+    @Binding private(set) var amount: String
     
     var body: some View {
         VStack(alignment: .trailing) {
