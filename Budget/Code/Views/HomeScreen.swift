@@ -4,7 +4,7 @@ import SwiftUI
 
 struct HomeScreen: View {
     @State private var isAddingTransaction = false
-    @State private var accountController = AccountController(
+    private let accountController = AccountController(
         account: TestData.account
     )
     
