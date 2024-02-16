@@ -15,7 +15,8 @@ struct AmountTextField: View {
             TextField(0.currencyFormat, text: $amount)
                 .multilineTextAlignment(.trailing)
                 .keyboardType(.decimalPad)
-                .font(Font.largeTitle.bold())
+                .font(Font.largeTitle)
+                .bold()
         }
         .padding()
     }
